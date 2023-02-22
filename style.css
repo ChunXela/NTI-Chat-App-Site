@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+-----------------Start of Flex Template-----------------
+*/
+
+.user_input_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+------------------GRID TEMPLATES--------------------
+*/
+
+.main_grid {
+  display: grid;
+  grid-template-columns: 1fr 80%;
+  grid-template-rows: 0;
+}
+
+.chatbox_grid {
+  display: grid;
+  grid-template-columns: 0;
+  grid-template-rows: 90% 1fr;
+}
+
+/*
+-----------------End of Grid Template----------------
+*/
+
+main {
+  height: 100vh;
+  width: 100vw;
+}
+
+.left_side {
+  display: block;
+  position: fixed;
+  grid-column-start: 1;
+  height: 100vh;
+  background-color: black;
+  text-align: center;
+  color: gray;
+}
+
+/* 
+-------------------Start of Chat Area---------------------------
+*/
+.chat_box {
+  grid-column: 2;
+  height: 100vh;
+  background-color: gray;
+  color: white;
+}
+
+.user_input {
+  grid-row-start: 2;
+  background-color: #63666a;
+  width: 80vw;
+}
+
+.user_input input {
+  font-size: 1.4rem;
+  background-color: #63666a;
+  border: 0;
+  width: 70vw;
+  margin: 2rem 0 0 2rem;
+  height: fit-content;
+  margin: auto;
+  text-decoration: none;
+  box-decoration-break: none;
+}
+
+/*
+-----------------------End of Chat Area-------------------------
+*/
