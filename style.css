@@ -20,13 +20,13 @@
 
 .main_grid {
   display: grid;
-  grid-template-columns: 1fr 80%;
-  grid-template-rows: 0;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1;
 }
 
 .chatbox_grid {
   display: grid;
-  grid-template-columns: 0;
+  grid-template-columns: 1;
   grid-template-rows: 90% 1fr;
 }
 
@@ -41,7 +41,6 @@ main {
 
 .left_side {
   display: block;
-  position: fixed;
   grid-column-start: 1;
   height: 100vh;
   background-color: black;
@@ -53,7 +52,7 @@ main {
 -------------------Start of Chat Area---------------------------
 */
 .chat_box {
-  grid-column: 2;
+  grid-column-start: 2;
   height: 100vh;
   background-color: gray;
   color: white;
@@ -69,14 +68,10 @@ main {
   font-size: 1.4rem;
   background-color: #63666a;
   border: 0;
-  width: 70vw;
-  margin: 2rem 0 0 2rem;
+  width: 70%; 
   height: fit-content;
-  margin: auto;
   text-decoration: none;
-  box-decoration-break: none;
-}
-
+ }
 /*
 -----------------------End of Chat Area-------------------------
 */
